@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="menu_side">
+            <h1>Ma Musique</h1>
+            <div class="playlist">
+                <a href="index.html"><h4 class="active"><span></span><i class="bi bi-house"></i>home</h4><br></a>
+                <a href="topMusic.html"><h4 class="active"><span></span><i class="bi bi-music-note"></i>Top Music</h4></a>
+                <h4 class="active"><span></span><i class="bi bi-music-note"></i>Top Artistes</h4><br>
+            </div>
+        </div>
+        <div class="menu_side_section">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-circle"></i>Les plus écoutés</h4><br>
+                <h4 class="active"><span></span><i class="bi bi-circle"></i>Coups de coeur</h4><br>
+                <h4 class="active"><span></span><i class="bi bi-circle"></i>Chill</h4>
+            </div>
+        </div>  
+    </header>
+
+    <section>
+        <div class="top-artist">
+            <h1>Top Artistes</h1>
+
+            <div class="list-artist">
+
+                <div class="artist">
+                    <div class="img-artist">
+                        <img src="image/artiste/theKidLaroi.jpg" alt="">
+                    </div>
+                    <h6>The Kid Laroi</h6>
+                </div>
+
+                <div class="artist">
+                    <div class="img-artist">
+                        <img src="image/artiste/juiceWRLD.jpg" alt="">
+                    </div>
+                    <h6>Juice World</h6>
+                </div>
+
+                <div class="artist">
+                    <div class="img-artist">
+                        <img src="image/artiste/Damso.png" alt="">
+                    </div>
+                    <h6>Damso</h6>
+                </div>
+
+                <div class="artist">
+                    <div class="img-artist">
+                        <img src="image/artiste/travisScott.jpg" alt="">
+                    </div>
+                    <h6>Travis Scott</h6>
+                </div>
+
+                <div class="artist">
+                    <div class="img-artist">
+                        <img src="image/artiste/centralCee.jpg" alt="">
+                    </div>
+                    <h6>Central Cee</h6>
+                </div>
+
+                <div class="artist">
+                    <div class="img-artist">
+                        <img src="image/artiste/Drake.jpg" alt="">
+                    </div>
+                    <h6>Drake</h6>
+                </div>
+
+                <div class="artist">
+                    <div class="img-artist">
+                        <img src="image/artiste/popSmoke.jpg" alt="">
+                    </div>
+                    <h6>Pop Smoke</h6>
+                </div>
+  
+            </div>
+        </div>
+
+        <div class="section-music">
+
+            <div class="in-play">
+                <div class="icon-song" >
+                    <img src="image/miniature/MartyMcFly.jpg" alt="" id="img-miniature"><br><br>
+                    <p id="titre-play" hidden>Titre</p><br>
+                    <p id="artist" hidden>Artiste</p>
+                </div>
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                        <input type="range" min="1" max="100"
+                        value="0" class="seek_slider" onchange="seekTo()">
+                        <div class="total-duration">00:00</div>
+                    </div>
+            </div>
+
+            <div class="song-list">
+                <h1>Les plus écoutés</h1>
+                <div class="list">
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/MartyMcFly.jpg" alt="" class="miniature"> 
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play" name="false"></i>
+                                    <p id="titre">Marty Mcfly</p>
+                                </div>        
+                                <p id="songer">7ru7h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/speak.png" alt="" class="miniature">  
+                            <div class="element-play"> 
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play" name="false"></i>
+                                    <p id="titre">Speak</p>
+                                </div>
+                                <p id="songer">The Kid Laroi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/capo.jfif" alt="" class="miniature"> 
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play" name="false"></i>
+                                    <p id="titre">Capo</p>
+                                </div>
+                                <p id="songer">NLE Choppa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/lose again.jfif" alt="" class="miniature"> 
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play"></i>
+                                    <p id="titre">Lose Again</p>
+                                </div>
+                                <p id="songer">JaeBxrd</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/thousand miles.jpg" alt="" class="miniature"> 
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play"></i>
+                                    <p id="titre">Thousand Miles</p>
+                                </div>
+                                <p id="songer">The Kid Laroi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/blue.png" alt="" class="miniature">
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play"></i>
+                                    <p id="titre">Blue</p>
+                                </div>
+                                <p id="songer">MAJ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/je m appelle.jpg" alt="" class="miniature"> 
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play"></i>
+                                    <p id="titre">Je M'appelle</p>
+                                </div>
+                                <p id="songer">Benzz</p>                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/noir meilleur.png" alt="" class="miniature"> 
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play"></i>
+                                    <p id="titre">Noir meilleur</p> 
+                                </div>
+                                <p id="songer">Damso</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/summer nights.jpg" alt="" class="miniature"> 
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play"></i>
+                                    <p id="titre">Summer Nights</p> 
+                                </div>
+                                <p id="songer">DryBoy,Clever</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <div class="element">
+                            <img src="image/miniature/xo tour life 3.jpg" alt="" class="miniature"> 
+                            <div class="element-play">
+                                <div>
+                                    <i class="bi bi-play-fill" id="taille-play"></i>
+                                    <p id="titre">XO Tour Life3</p> 
+                                </div>
+                                <p id="songer">Lil Uzi Vert</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+            
+    </section>
+
+</body>
+<script src="scripts.js"></script>
+</html>
