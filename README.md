@@ -1,77 +1,22 @@
+# My Top Spotify 🎧
 
-# My top artist
+This is a mini project that I completed independently to improve my web development skills.
 
-This is a mini project 
-that I did alone in order to improve
-myself in web development
+## 📋 Description 
 
-## Description
+This project is inspired by the design from [Dribbble](https://dribbble.com/shots/16894605-Music-Player-Web-App).
 
-this project is inspired by the design:
+The project provides the ability to play music using a function specific to jQuery. However, there are some features that need improvement:
 
-* [design](https://dribbble.com/shots/16894605-Music-Player-Web-App).
+- **Slide bar**: Adjusting the slide bar affects the audio duration, but the implementation requires refinement.
+- **Music playback**: Changing tracks stops the current music but doesn't pause it.
 
-in this mini project,
-we have the possibility to play
-music using a function specific to JQuery.
+## 🛠️ Skills
 
-```Javascript
-$(document).ready(function() {
-    var audioElement = document.createElement('audio');
-    var inplay = true;
+- HTML
+- CSS
+- JavaScript
 
-    for (let i = 0; i < song.length; i++) {
+## Completion Date 📅
 
-       $(song[i]).click(function() {
-
-       
-            if(song[i].getAttribute('class') == "bi bi-play-fill"){
-            
-                audioElement.setAttribute('src',song_list_plus_ecoute[i]);
-               audioElement.play();
-```
----
-despite many efforts, I did not manage to make many thing work correctly
-
-* the Slide bar
-
-```Javascript
-      var cat = audioElement.duration *(seek_slider.value/100);
-                audioElement.currentTime = cat;
-```
-
-* when you change music, the other music stops but does not pause
-
-```Javascript
-
-            if(song[i].getAttribute('class') == "bi bi-play-fill"){
-            
-                audioElement.setAttribute('src',song_list_plus_ecoute[i]);
-                audioElement.play();
-                
-
-                song[i].setAttribute('class','bi bi-pause-fill');
-
-                document.getElementById('img-miniature').setAttribute('src',liste_miniatures_plus_ecoute[i]);
-                document.getElementById('titre-play').hidden = false;
-                document.getElementById('titre-play').innerHTML  = titre[i].innerHTML;
-                document.getElementById('artist').hidden = false;
-                document.getElementById('artist').innerHTML = chanteur[i].innerHTML;
-
-                var cat = audioElement.duration *(seek_slider.value/100);
-                audioElement.currentTime = cat;
-            }else if(song[i].getAttribute('class') == "bi bi-pause-fill"){
-
-                audioElement.pause();
-                song[i].setAttribute('class','bi bi-play-fill');
-              
-            }
-```
-
-## 🛠 Skills
-
-HTML, CSS, JavaScript
-
-## CompletionDate
-
-15 December 2020
+December 15, 2020
