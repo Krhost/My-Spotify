@@ -17,6 +17,6 @@ The project provides the ability to play music using a function specific to jQue
 - CSS
 - JavaScript
 
-## Completion Date 📅
+## 📅 Completion Date
 
 December 15, 2020
